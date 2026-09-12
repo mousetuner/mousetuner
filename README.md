@@ -53,3 +53,50 @@ Input sources: switch by app, or by the domain of the current browser tab.
 ## Requirements
 
 macOS 13.3 or later. Universal binary for Apple silicon and Intel.
+
+## Install
+
+Download [MouseTuner.dmg](https://github.com/mousetuner/mousetuner/releases/latest/download/MouseTuner.dmg) — signed with a Developer ID and notarized, under 4 MB — or install it with Homebrew:
+
+```
+brew install --cask mousetuner/tap/mousetuner
+```
+
+On first launch MouseTuner asks for Accessibility permission. Scrolling and button mapping cannot work without it, because both rely on intercepting system input events. Input Monitoring is *not* required.
+
+## Price
+
+$9.90 once, or ¥68 in China. Not a subscription.
+
+One license key activates up to 3 machines and includes updates for the life of the license. Before buying there is a 30-day trial with every feature unlocked, no account and no payment method. Refunds are 14 days, no questions asked.
+
+## Privacy
+
+No account. No analytics. No crash reporter.
+
+The app makes exactly four network requests of its own: registering the trial on first launch, activating a license, one revocation check per day, and deactivating. Each request body contains only a license key hash and a machine fingerprint hash — never an account, never anything about how you use the app. The full list, with the trigger and payload of each, is published at [mousetuner.com/privacy](https://mousetuner.com/privacy) so it can be checked against a packet capture.
+
+## Compared with Logi Options+
+
+MouseTuner covers the hardware controls most people install Options+ for — DPI, SmartShift, battery, thumb buttons — and adds smooth scrolling and per-app overrides, which Options+ does not do. It also works on non-Logitech mice, which Options+ structurally cannot.
+
+It does **not** replace Flow (one mouse across several computers), firmware updates, Logitech keyboards, or the Actions Ring. If you need any of those, keep Options+ — the two run side by side.
+
+Side-by-side table: [mousetuner.com/logi-options-plus-alternative](https://mousetuner.com/logi-options-plus-alternative)
+
+## Supported mice
+
+Smooth scrolling and button mapping work with **any** mouse macOS can see. Only the HID++ hardware controls need a recognized device.
+
+The current list covers 16 Logitech models (MX Master, MX Anywhere, MX Ergo, MX Vertical, M720 and others). Their model names and product IDs come from libratbag, the open-source Linux device database — that proves a device speaks HID++, but not which capabilities it exposes, so every row is marked *recognized, hardware controls not yet verified*. Verifying them needs captures from real hardware; if you have one of these mice, a capture is the most useful thing you can contribute.
+
+Current list: [mousetuner.com/compatibility](https://mousetuner.com/compatibility)
+
+## Links
+
+- Website: [mousetuner.com](https://mousetuner.com)
+- Documentation — every trigger and action, the settings panels, the glossary: [mousetuner.com/docs](https://mousetuner.com/docs)
+- Changelog: [mousetuner.com/changelog](https://mousetuner.com/changelog)
+- Bug reports and device captures: [Issues](https://github.com/mousetuner/mousetuner/issues)
+
+The app ships in English, Simplified Chinese, Traditional Chinese, Japanese, Korean, German, French and Spanish.
