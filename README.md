@@ -1,3 +1,5 @@
+<img src="docs/icon.png" width="88" alt="MouseTuner">
+
 # MouseTuner
 
 [English](README.md) · [简体中文](README.zh-CN.md)
