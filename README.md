@@ -1,5 +1,7 @@
 # MouseTuner
 
+[English](README.md) · [简体中文](README.zh-CN.md)
+
 A menu bar app that gives any mouse on macOS the behavior the system leaves out.
 
 ## What it does
