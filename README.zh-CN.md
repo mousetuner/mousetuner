@@ -4,6 +4,13 @@
 
 给 macOS 上的鼠标补齐系统没有给的那部分体验，常驻菜单栏。
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/shots/scroll-dark.webp">
+  <img alt="滚动面板，可以看到 Scroll Curve、参数滑块与实时预览" src="docs/shots/scroll-light.webp">
+</picture>
+
+滚动面板：Scroll Curve、它的五个参数，以及拖动时实时跟着变的预览。
+
 ## 它做什么
 
 - **平滑滚动。** 把滚轮的离散跳动换成像素级的惯性滚动。触控板与妙控鼠标原样通过，不受影响。
@@ -17,6 +24,31 @@
 - **罗技硬件控制。** 在已识别的设备上，经 HID++ 读写 DPI、SmartShift 与电量。HID++ 就是厂商自家软件说的那套协议，用它不需要厂商软件在后台运行。
 
 平滑滚动与按键映射对任何鼠标都生效。硬件控制需要 MouseTuner 认得出的设备。
+
+## 界面
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/shots/buttons-dark.webp">
+  <img alt="按键映射面板，可以看到触发与它们对应的动作" src="docs/shots/buttons-light.webp">
+</picture>
+
+按键映射：一个按键挂一串触发，每个触发只指向一个动作。两者都可以按应用覆盖。
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/shots/device-dark.webp">
+  <img alt="设备面板，可以看到已识别鼠标的 DPI、SmartShift 与电量" src="docs/shots/device-light.webp">
+</picture>
+
+设备：在 MouseTuner 认得出的鼠标上，经 HID++ 读写 DPI、SmartShift 与电量。
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/shots/inputsource-dark.webp">
+  <img alt="输入法面板，可以看到按应用与按域名的规则" src="docs/shots/inputsource-light.webp">
+</picture>
+
+输入法：按应用切换，或者按浏览器当前标签页的域名切换。
+
+截图取自英文界面，应用本身有八种语言。
 
 ## 系统要求
 

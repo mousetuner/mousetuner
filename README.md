@@ -4,6 +4,13 @@
 
 A menu bar app that gives any mouse on macOS the behavior the system leaves out.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/shots/scroll-dark.webp">
+  <img alt="The Scrolling panel, showing the Scroll Curve, its parameters and a live preview" src="docs/shots/scroll-light.webp">
+</picture>
+
+The Scrolling panel: the Scroll Curve, its five parameters, and a preview that reacts while you drag.
+
 ## What it does
 
 - **Smooth scrolling.** Replaces the discrete steps of a wheel mouse with pixel-level inertial scrolling. Trackpads and the Magic Mouse pass through untouched.
@@ -17,6 +24,29 @@ A menu bar app that gives any mouse on macOS the behavior the system leaves out.
 - **Logitech hardware control.** On a recognized device, read and write DPI, SmartShift and battery level over HID++, the protocol the vendor's own software speaks. No vendor software has to be running.
 
 Smooth scrolling and button mapping work with any mouse. The hardware controls need a device MouseTuner recognizes.
+
+## Screens
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/shots/buttons-dark.webp">
+  <img alt="The Button Mapping panel, showing triggers and the actions they fire" src="docs/shots/buttons-light.webp">
+</picture>
+
+Button Mapping: a button holds a list of triggers, and every trigger points at exactly one action. Both can be overridden per app.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/shots/device-dark.webp">
+  <img alt="The Device panel, showing DPI, SmartShift and battery for a recognized mouse" src="docs/shots/device-light.webp">
+</picture>
+
+Device: DPI, SmartShift and battery level, read and written over HID++ on a mouse MouseTuner recognizes.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/shots/inputsource-dark.webp">
+  <img alt="The Input Source panel, showing per-app and per-domain rules" src="docs/shots/inputsource-light.webp">
+</picture>
+
+Input sources: switch by app, or by the domain of the current browser tab.
 
 ## Requirements
 
